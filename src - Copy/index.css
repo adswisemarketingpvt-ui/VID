@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Preloader spinner styles */
+.ytp-spinner {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.ytp-spinner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: ytp-spinner-rotate 1.568s linear infinite;
+}
+
+.ytp-spinner-left,
+.ytp-spinner-right {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ytp-spinner-left {
+  left: 0;
+}
+
+.ytp-spinner-right {
+  right: 0;
+}
+
+.ytp-spinner-circle {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+  border-color: #3b82f6 transparent;
+}
+
+.ytp-spinner-left .ytp-spinner-circle {
+  left: 0;
+  right: -100%;
+  animation: ytp-spinner-left-rotate 1.568s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+.ytp-spinner-right .ytp-spinner-circle {
+  right: 0;
+  left: -100%;
+  animation: ytp-spinner-right-rotate 1.568s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes ytp-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ytp-spinner-left-rotate {
+  0%, 100% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes ytp-spinner-right-rotate {
+  0%, 100% {
+    transform: rotate(-130deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Smooth transitions for hover effects */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
