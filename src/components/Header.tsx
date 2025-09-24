@@ -1,7 +1,7 @@
 // Header.jsx
 import React, { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { motion } from "motion/react"; 
+import { motion } from "motion/react";
 // If you're on framer-motion v10 or earlier, use:
 // import { motion } from "framer-motion";
 
@@ -137,14 +137,20 @@ const Header = () => {
               className="lg:hidden text-gray-700 p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
 
           {/* Mobile Menu */}
           <div
             className={`lg:hidden transition-all duration-300 ${
-              isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+              isMenuOpen
+                ? "max-h-96 opacity-100"
+                : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
             <nav className="py-4 space-y-4">
@@ -201,29 +207,43 @@ const Header = () => {
               <div className="py-8">
                 <h4
                   className="text-lg text-gray-600 mb-4 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "1s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "1s",
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  Hey Dude!
+                  Your trusted
                 </h4>
                 <h1
                   className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6 ml-[100px] opacity-0 animate-fadeInUp"
-                  style={{ animationDelay: "2s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "2s",
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  <span className="text-blue-600">You're</span> Using Free Lite Version of This Template
+                  <span className="text-blue-600">Interior Design</span>
+                  Partner for Home or Office
                 </h1>
                 <p
                   className="text-lg text-gray-600 mb-8 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "2.2s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "2.2s",
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  Please, consider purchasing full version to get all pages, features, assets and permission to remove footer credits.
+                  Please, consider purchasing full version to get all pages,
+                  features, assets and permission to remove footer credits.
                 </p>
                 <a
                   href="https://rebrand.ly/interior-ud"
                   rel="nofollow"
                   className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "2.3s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "2.3s",
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  Get Full Version
+                  Get a Free Quote
                 </a>
               </div>
             </div>
