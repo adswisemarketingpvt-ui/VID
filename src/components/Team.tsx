@@ -30,7 +30,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="pt-32 pb-32 bg-gray-50">
+    <section id="team" className="pt-32 pb-32 bg-[#E2E8F0]">
       <div className="container mx-auto px-4">
         <div className="flex justify-center">
           <div className="lg:w-1/2 w-full">
@@ -58,17 +58,17 @@ const Team = () => {
                   <span className="text-gray-600">{member.position}</span>
                   <ul className="flex justify-center space-x-3 mt-6">
                     <li>
-                      <a href="#" className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                      <a href="#" className="w-10 h-10 bg-[#005561] text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                         <Facebook className="w-4 h-4" />
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                      <a href="#" className="w-10 h-10 bg-[#005561]/30 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
                         <Twitter className="w-4 h-4" />
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
+                      <a href="#" className="w-10 h-10 bg-[#005561] text-white rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
                         <Linkedin className="w-4 h-4" />
                       </a>
                     </li>

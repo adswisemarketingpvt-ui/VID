@@ -3,7 +3,7 @@ import React from 'react';
 const Map = () => {
   return (
     <section id="map" className="relative">
-      <div className="w-full h-96">
+      <div className="w-full h-96 ">
         <div className="w-full h-full">
           <iframe 
             src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"

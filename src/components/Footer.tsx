@@ -11,14 +11,14 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="bg-gray-800 text-white">
-      <div className="pt-20 pb-32">
+    <footer id="footer" className="bg-[#005561] text-white">
+      <div className="pt-10 pb-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap -mx-4">
             <div className="lg:w-1/4 md:w-1/3 sm:w-2/3 w-full px-4">
               <div className="mt-12">
                 <a href="#" className="inline-block mb-8">
-                  <img src="https://images.pexels.com/photos/1426044/pexels-photo-1426044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo" className="h-10 w-auto" />
+                  <img src="https://vishwaswamiinteriors.com/logo.png" alt="Logo" className="h-12 w-14" />
                 </a>
                 <ul className="space-y-4">
                   <li>
@@ -129,15 +129,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-700 py-6">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <p className="text-gray-400">
-              Template Designed and Developed by <a href="https://uideck.com" rel="nofollow" className="text-blue-400 hover:text-blue-300 transition-colors">UIdeck</a>
-            </p>
-          </div>
-        </div>
-      </div>
+      
     </footer>
   );
 };

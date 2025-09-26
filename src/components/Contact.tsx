@@ -48,7 +48,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="Your Name" 
                         required
-                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-[#005561] focus:border-transparent outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="Your Email" 
                         required
-                        className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#005561] focus:border-transparent outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="Subject" 
                         required
-                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-[#005561] focus:border-transparent outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="Phone" 
                         required
-                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-[#005561] focus:border-transparent outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         rows={6}
-                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                        className="w-full px-4 py-3 border border-gray-300  focus:ring-2 focus:ring-[#005561] focus:border-transparent outline-none transition-all resize-none"
                       ></textarea>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                     <div className="text-center">
                       <button 
                         type="submit" 
-                        className="bg-blue-600 text-white px-8 py-3  hover:bg-blue-700 transition-colors font-medium inline-flex items-center space-x-2"
+                        className="bg-[#005561] hover:bg-[#004B55] text-white px-8 py-3  transition-colors font-medium inline-flex items-center space-x-2"
                       >
                         <span>send message</span>
                         <Send className="w-4 h-4" />

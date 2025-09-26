@@ -70,9 +70,9 @@ const Header = () => {
             <div className="flex items-center">
               <a href="#" className="text-2xl font-bold text-gray-800">
                 <img
-                  src="https://i.pinimg.com/736x/96/58/df/9658dfaa54045d39dc53e01c9f60fc8b.jpg"
+                  src="https://vishwaswamiinteriors.com/logo.png"
                   alt="Logo"
-                  className="h-10 w-auto"
+                  className="h-12 w-14 ml-2"
                 />
               </a>
             </div>
@@ -81,37 +81,37 @@ const Header = () => {
             <nav className="hidden lg:flex items-center space-x-8">
               <button
                 onClick={() => scrollTo("home")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700  hover:text-[#005561] font-medium transition-colors"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollTo("about")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollTo("service")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollTo("project")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Projects
               </button>
               <button
                 onClick={() => scrollTo("team")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Team
               </button>
               <button
                 onClick={() => scrollTo("contact")}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Contact
               </button>
@@ -120,7 +120,7 @@ const Header = () => {
             <div className="hidden sm:flex items-center space-x-4">
               <a
                 href="#"
-                className="bg-blue-600 text-white px-6 py-2 hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                className="bg-[#005561] text-white px-6 py-2 hover:bg-[#004B55] transition-colors flex items-center space-x-2"
               >
                 <Phone className="w-4 h-4" />
                 <span>+98 222 4444</span>
@@ -132,50 +132,56 @@ const Header = () => {
               className="lg:hidden text-gray-700 p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
 
           {/* Mobile Menu */}
           <div
             className={`lg:hidden transition-all duration-300 ${
-              isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+              isMenuOpen
+                ? "max-h-96 opacity-100"
+                : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
             <nav className="py-4 space-y-4">
               <button
                 onClick={() => scrollTo("home")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollTo("about")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollTo("service")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollTo("project")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Projects
               </button>
               <button
                 onClick={() => scrollTo("team")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Team
               </button>
               <button
                 onClick={() => scrollTo("contact")}
-                className="block text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block text-gray-700 hover:text-[#005561] font-medium transition-colors"
               >
                 Contact
               </button>
@@ -196,21 +202,32 @@ const Header = () => {
               <div className="py-8">
                 <h4
                   className="text-lg text-gray-600 mb-4 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "1s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "1s",
+                    animationFillMode: "forwards",
+                  }}
                 >
                   Your trusted
                 </h4>
                 <h1
                   className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6 ml-[100px] opacity-0 animate-fadeInUp"
-                  style={{ animationDelay: "2s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "2s",
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  <span className="text-chiliRed">Interior Design</span>
+                  <span className="bg-gradient-to-r from-yellow-300 via-[#FFD700] to-[#B8860B] bg-clip-text text-transparent">
+                    Interior Design
+                  </span>
                   <br />
                   Partner for Home or Office
                 </h1>
                 <p
                   className="text-lg text-gray-600 mb-8 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "2.2s", animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: "2.2s",
+                    animationFillMode: "forwards",
+                  }}
                 >
                   Please, consider purchasing full version to get all pages,
                   features, assets and permission to remove footer credits.
@@ -218,8 +235,11 @@ const Header = () => {
                 <a
                   href="https://rebrand.ly/interior-ud"
                   rel="nofollow"
-                  className="inline-block bg-blue-600 text-white px-8 py-4 hover:bg-blue-700 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{ animationDelay: "2.3s", animationFillMode: "forwards" }}
+                  className="inline-block bg-[#005561] hover:bg-[#004B55]  text-white px-8 py-4 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
+                  style={{
+                    animationDelay: "2.3s",
+                    animationFillMode: "forwards",
+                  }}
                 >
                   Get a Free Quote
                 </a>
@@ -239,9 +259,17 @@ const Header = () => {
             aria-hidden="true"
           >
             {/* Outer ring */}
-            <div className="absolute inset-0 rounded-full border-[28px] border-rose-300/50" />
+            <div
+  className="
+    absolute inset-0 rounded-full
+    bg-[conic-gradient(from_0deg,#fffef2,#fff7c2,#ffe98a,#fffef2)]
+    [mask:radial-gradient(farthest-side,transparent_calc(100%-28px),#000_calc(100%-28px))]
+  "
+/>
+
+
+
             {/* Inner ring */}
-           
           </div>
         </div>
 

@@ -45,13 +45,23 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
                   <div className="absolute -inset-2 rounded-lg bg-white shadow-lg" />
                   <a
                     href="#"
-                    className="relative inline-flex items-center justify-center px-6 py-3 sm:px-7 sm:py-4 rounded-lg bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-[0_15px_30px_rgba(244,63,94,0.35)]"
+                    className="
+  relative inline-flex items-center justify-center
+  px-6 py-3 sm:px-7 sm:py-4 rounded-lg
+  bg-gradient-to-r from-yellow-300 via-[#FFD700] to-[#B8860B]
+  text-amber-900 font-semibold
+  shadow-[0_15px_30px_rgba(255,215,0,0.35)]
+  hover:from-yellow-400 hover:via-[#FFD700] hover:to-[#996515]
+  active:scale-95 transition-all duration-200
+  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300
+"
+
                   >
                     <div className="text-left leading-tight">
-                      <div className="text-2xl sm:text-3xl font-extrabold">
+                      <div className="text-2xl sm:text-3xl font-extrabold text-white">
                         27
                       </div>
-                      <div className="text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                      <div className="text-xs sm:text-sm font-semibold tracking-wide text-white uppercase">
                         Years Experience
                       </div>
                     </div>
@@ -90,7 +100,7 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
 
             <a
               href="#"
-              className="inline-block mt-6 bg-blue-600 text-white px-8 py-4  hover:bg-blue-700 transition-colors font-medium ]"
+              className="inline-block mt-6 bg-[#005561] hover:bg-[#004B55] text-white px-8 py-4  transition-colors font-medium ]"
             >
               Learn More
             </a>
