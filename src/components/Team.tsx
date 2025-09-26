@@ -43,7 +43,7 @@ const Team = () => {
         <div className="flex flex-wrap -mx-4">
           {team.map((member, index) => (
             <div key={index} className="lg:w-1/4 md:w-1/2 sm:w-1/2 w-full px-4">
-              <div className="text-center mt-8 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+              <div className="text-center mt-8 bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <div className="mb-6">
                   <img 
                     src={member.image} 

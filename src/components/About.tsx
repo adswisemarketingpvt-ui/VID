@@ -90,7 +90,7 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
 
             <a
               href="#"
-              className="inline-block mt-6 bg-rose-600 text-white px-7 py-3 rounded-full hover:bg-rose-700 transition-colors font-medium shadow-[0_12px_28px_rgba(225,29,72,0.28)]"
+              className="inline-block mt-6 bg-blue-600 text-white px-8 py-4  hover:bg-blue-700 transition-colors font-medium ]"
             >
               Learn More
             </a>

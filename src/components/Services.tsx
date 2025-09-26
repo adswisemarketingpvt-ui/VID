@@ -55,7 +55,7 @@ const Services = () => {
         <div className="flex flex-wrap justify-center -mx-4">
           {services.map((service, index) => (
             <div key={index} className="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full px-4">
-              <div className="text-center mt-8 bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+              <div className="text-center mt-8 bg-white p-8  shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-full mb-6">
                   <service.icon className="w-8 h-8" />
                 </div>

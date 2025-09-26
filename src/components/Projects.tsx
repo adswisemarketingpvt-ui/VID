@@ -67,7 +67,7 @@ const Projects = () => {
           >
             {projects.map((project, index) => (
               <div key={index} className="flex-none w-1/3 px-2">
-                <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                <div className="group relative overflow-hidden  shadow-lg">
                   <img 
                     src={project.image} 
                     alt="Project" 

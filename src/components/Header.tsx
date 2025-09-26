@@ -1,13 +1,10 @@
 // Header.jsx
 import React, { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { motion } from "motion/react";
-// If you're on framer-motion v10 or earlier, use:
-// import { motion } from "framer-motion";
+import { motion } from "motion/react"; // if using framer-motion v10 or earlier: import { motion } from "framer-motion";
 
 // --- Simple background marquee slider (left -> right, continuous) ---
 const MarqueeBG = () => {
-  // Add/replace with your images
   const images = [
     "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
     "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg",
@@ -16,15 +13,13 @@ const MarqueeBG = () => {
     "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
   ];
 
-  // Duplicate the list to create a seamless loop
   const track = [...images, ...images];
 
   return (
     <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-      {/* A very wide lane to slide on */}
       <div className="absolute inset-y-0 left-0 w-[300vw]">
         <motion.div
-          className="absolute inset-y-0 flex items-center h-[100px] gap-8 "
+          className="absolute inset-y-0 flex items-center h-[100px] gap-8"
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           style={{ willChange: "transform" }}
@@ -34,7 +29,7 @@ const MarqueeBG = () => {
               key={i}
               src={src}
               alt={`bg-${i}`}
-              className="h-full w-auto object-cover "
+              className="h-full w-auto object-cover"
               loading="lazy"
             />
           ))}
@@ -125,7 +120,7 @@ const Header = () => {
             <div className="hidden sm:flex items-center space-x-4">
               <a
                 href="#"
-                className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                className="bg-blue-600 text-white px-6 py-2 hover:bg-blue-700 transition-colors flex items-center space-x-2"
               >
                 <Phone className="w-4 h-4" />
                 <span>+98 222 4444</span>
@@ -137,20 +132,14 @@ const Header = () => {
               className="lg:hidden text-gray-700 p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
           {/* Mobile Menu */}
           <div
             className={`lg:hidden transition-all duration-300 ${
-              isMenuOpen
-                ? "max-h-96 opacity-100"
-                : "max-h-0 opacity-0 overflow-hidden"
+              isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
             <nav className="py-4 space-y-4">
@@ -207,29 +196,21 @@ const Header = () => {
               <div className="py-8">
                 <h4
                   className="text-lg text-gray-600 mb-4 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{
-                    animationDelay: "1s",
-                    animationFillMode: "forwards",
-                  }}
+                  style={{ animationDelay: "1s", animationFillMode: "forwards" }}
                 >
                   Your trusted
                 </h4>
                 <h1
                   className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6 ml-[100px] opacity-0 animate-fadeInUp"
-                  style={{
-                    animationDelay: "2s",
-                    animationFillMode: "forwards",
-                  }}
+                  style={{ animationDelay: "2s", animationFillMode: "forwards" }}
                 >
-                  <span className="text-blue-600">Interior Design</span>
+                  <span className="text-chiliRed">Interior Design</span>
+                  <br />
                   Partner for Home or Office
                 </h1>
                 <p
                   className="text-lg text-gray-600 mb-8 opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{
-                    animationDelay: "2.2s",
-                    animationFillMode: "forwards",
-                  }}
+                  style={{ animationDelay: "2.2s", animationFillMode: "forwards" }}
                 >
                   Please, consider purchasing full version to get all pages,
                   features, assets and permission to remove footer credits.
@@ -237,11 +218,8 @@ const Header = () => {
                 <a
                   href="https://rebrand.ly/interior-ud"
                   rel="nofollow"
-                  className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{
-                    animationDelay: "2.3s",
-                    animationFillMode: "forwards",
-                  }}
+                  className="inline-block bg-blue-600 text-white px-8 py-4 hover:bg-blue-700 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
+                  style={{ animationDelay: "2.3s", animationFillMode: "forwards" }}
                 >
                   Get a Free Quote
                 </a>
@@ -250,7 +228,24 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right-side static background image ABOVE the slider */}
+        {/* === Decorative pink rings behind the right image === */}
+        {/* Place BEFORE the image block; lower z-index than image, higher than marquee */}
+        <div className="absolute inset-0 hidden lg:block pointer-events-none">
+          <div
+            className="
+              absolute right-[32%] top-[88%] -translate-y-1/2
+              w-[320px] h-[320px] z-[6]
+              rounded-full"
+            aria-hidden="true"
+          >
+            {/* Outer ring */}
+            <div className="absolute inset-0 rounded-full border-[28px] border-rose-300/50" />
+            {/* Inner ring */}
+           
+          </div>
+        </div>
+
+        {/* Right-side static background image ABOVE the rings */}
         <div
           className="absolute right-0 top-0 w-1/2 h-full bg-cover bg-center hidden lg:block z-10"
           style={{
