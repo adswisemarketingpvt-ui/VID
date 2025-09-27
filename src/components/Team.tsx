@@ -30,7 +30,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="pt-32 pb-32 bg-[#E2E8F0]">
+    <section id="team" className="pt-10 pb-32 bg-[#E2E8F0]">
       <div className="container mx-auto px-4">
         <div className="flex justify-center">
           <div className="lg:w-1/2 w-full">

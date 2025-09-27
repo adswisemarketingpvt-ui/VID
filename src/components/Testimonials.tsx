@@ -41,30 +41,12 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonial" className="pt-32 pb-32 relative">
+    <section id="testimonial" className="pt-10 pb-32 relative">
       {/* Background Shapes */}
-      <div className="absolute top-10 left-10 w-16 h-16 opacity-20">
-        <img
-          src="https://images.pexels.com/photos/1426044/pexels-photo-1426044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="testimonial"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="absolute top-20 right-20 w-12 h-12 opacity-15">
-        <img
-          src="https://images.pexels.com/photos/1426044/pexels-photo-1426044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="testimonial"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="absolute bottom-20 left-1/4 w-14 h-14 opacity-10">
-        <img
-          src="https://images.pexels.com/photos/1426044/pexels-photo-1426044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="testimonial"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
+      <div className="text-center pb-10">
+              <h5 className="text-blue-600 text-lg font-medium mb-4">Meet The Team</h5>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Our Expert Designers</h2>
+            </div>
       <div className="container mx-auto px-4">
         <div
           className="bg-cover bg-center py-20 px-8 rounded-lg relative"
@@ -73,7 +55,7 @@ const Testimonials = () => {
               "url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
           <div className="relative z-10">
             <div className="flex justify-end">
               <div className="xl:w-1/3 xl:ml-auto lg:w-5/12 lg:ml-auto md:w-2/3 md:mx-auto sm:w-5/6 sm:mx-auto w-full">

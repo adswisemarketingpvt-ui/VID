@@ -6,11 +6,11 @@ import { motion } from "motion/react"; // if using framer-motion v10 or earlier:
 // --- Simple background marquee slider (left -> right, continuous) ---
 const MarqueeBG = () => {
   const images = [
-    "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-    "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg",
-    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
-    "https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg",
-    "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
+    "https://i.pinimg.com/736x/20/60/1f/20601f8a5950592173a14bd487837bda.jpg",
+    "https://i.pinimg.com/736x/96/41/ac/9641ac25cb86cbb09b5fe54988fb1893.jpg",
+    "https://i.pinimg.com/1200x/b1/0d/12/b10d12b3053385f4365990dbd067bf92.jpg",
+    "https://i.pinimg.com/736x/59/c2/34/59c234549a3e5a73d4752ab30cd4d754.jpg",
+    "https://i.pinimg.com/736x/fa/97/2a/fa972ab62e1c8d0faff2af6e086bd66f.jpg",
   ];
 
   const track = [...images, ...images];
@@ -119,11 +119,12 @@ const Header = () => {
 
             <div className="hidden sm:flex items-center space-x-4">
               <a
-                href="#"
-                className="bg-[#005561] text-white px-6 py-2 hover:bg-[#004B55] transition-colors flex items-center space-x-2"
+                href="tel:+919405435995"
+                aria-label="Call +91 9405435995"
+                className="bg-[#005561] text-white px-6 py-2 hover:bg-[#004B55] transition-colors flex items-center space-x-2 "
               >
                 <Phone className="w-4 h-4" />
-                <span>+98 222 4444</span>
+                <span>+91 9405435995</span>
               </a>
             </div>
 
@@ -217,13 +218,13 @@ const Header = () => {
                   }}
                 >
                   <span className="bg-gradient-to-r from-yellow-300 via-[#FFD700] to-[#B8860B] bg-clip-text text-transparent">
-                    Interior Design
+                    𝓘𝓷𝓽𝓮𝓻𝓲𝓸𝓻 𝓓𝓮𝓼𝓲𝓰𝓷
                   </span>
                   <br />
-                  Partner for Home or Office
+                  <span className="text-[#005561]">Partner for Home or Office</span>
                 </h1>
                 <p
-                  className="text-lg text-gray-600 mb-8 opacity-0 animate-fadeInUp ml-[100px]"
+                  className="text-lg text-gray-800 mb-8 opacity-0 animate-fadeInUp ml-[100px]"
                   style={{
                     animationDelay: "2.2s",
                     animationFillMode: "forwards",
@@ -233,7 +234,7 @@ const Header = () => {
                   features, assets and permission to remove footer credits.
                 </p>
                 <a
-                  href="https://rebrand.ly/interior-ud"
+                  href="#"
                   rel="nofollow"
                   className="inline-block bg-[#005561] hover:bg-[#004B55]  text-white px-8 py-4 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
                   style={{
@@ -260,14 +261,12 @@ const Header = () => {
           >
             {/* Outer ring */}
             <div
-  className="
+              className="
     absolute inset-0 rounded-full
     bg-[conic-gradient(from_0deg,#fffef2,#fff7c2,#ffe98a,#fffef2)]
     [mask:radial-gradient(farthest-side,transparent_calc(100%-28px),#000_calc(100%-28px))]
   "
-/>
-
-
+            />
 
             {/* Inner ring */}
           </div>
@@ -278,7 +277,7 @@ const Header = () => {
           className="absolute right-0 top-0 w-1/2 h-full bg-cover bg-center hidden lg:block z-10"
           style={{
             backgroundImage:
-              "url(https://i.pinimg.com/736x/90/35/58/903558b9f2acdc341bb3c46811261a80.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              "url(https://i.pinimg.com/736x/2d/06/2a/2d062a8e3aa0d19d2b412fb81cba723e.jpg)",
           }}
         />
       </div>

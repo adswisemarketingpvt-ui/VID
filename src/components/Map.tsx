@@ -18,7 +18,7 @@ const Map = () => {
       </div>
       <div 
         className="absolute right-0 top-0 w-1/3 h-full bg-cover bg-center hidden lg:block"
-        style={{ backgroundImage: 'url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1)' }}
+        style={{ backgroundImage: 'url(https://vishwaswamiinteriors.com/16)' }}
       ></div>
     </section>
   );
