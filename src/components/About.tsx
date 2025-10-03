@@ -23,7 +23,9 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
               {/* Top-left image */}
               <div className="absolute left-0 top-0">
                 <img
-                  src={"https://i.pinimg.com/1200x/81/ee/08/81ee0887a23dc52654c40b655c776e4c.jpg"}
+                  src={
+                    "https://i.pinimg.com/1200x/81/ee/08/81ee0887a23dc52654c40b655c776e4c.jpg"
+                  }
                   alt="Project preview"
                   className="w-72 sm:w-80 h-52 sm:h-56 object-cover rounded-lg shadow-xl"
                 />
@@ -32,7 +34,9 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
               {/* Bottom-right image */}
               <div className="absolute right-0 bottom-0">
                 <img
-                  src={"https://i.pinimg.com/736x/98/b2/bd/98b2bdc0f1adb18a66fb125fbe4c1d86.jpg"}
+                  src={
+                    "https://i.pinimg.com/736x/98/b2/bd/98b2bdc0f1adb18a66fb125fbe4c1d86.jpg"
+                  }
                   alt="Project detail"
                   className="w-80 sm:w-[22rem] h-60 sm:h-64 object-cover rounded-lg shadow-xl"
                 />
@@ -55,7 +59,6 @@ const About = ({ uploadedSrc = "/mnt/data/1.png" }) => {
   active:scale-95 transition-all duration-200
   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300
 "
-
                   >
                     <div className="text-left leading-tight">
                       <div className="text-2xl sm:text-3xl font-extrabold text-white">

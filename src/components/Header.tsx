@@ -59,6 +59,7 @@ const Header = () => {
 
   return (
     <header id="home" className="relative pt-24 bg-white">
+      
       {/* Top Nav */}
       <div
         className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
@@ -218,7 +219,7 @@ const Header = () => {
                   }}
                 >
                   <span className="bg-gradient-to-r from-yellow-300 via-[#FFD700] to-[#B8860B] bg-clip-text text-transparent">
-                    𝓘𝓷𝓽𝓮𝓻𝓲𝓸𝓻 𝓓𝓮𝓼𝓲𝓰𝓷
+                  Interior Design
                   </span>
                   <br />
                   <span className="text-[#005561]">Partner for Home or Office</span>
@@ -234,16 +235,22 @@ const Header = () => {
                   features, assets and permission to remove footer credits.
                 </p>
                 <a
-                  href="#"
-                  rel="nofollow"
-                  className="inline-block bg-[#005561] hover:bg-[#004B55]  text-white px-8 py-4 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px]"
-                  style={{
-                    animationDelay: "2.3s",
-                    animationFillMode: "forwards",
-                  }}
-                >
-                  Get a Free Quote
-                </a>
+  href="#"
+  rel="nofollow"
+  className="inline-flex items-center bg-[#005561] hover:bg-[#004B55] text-white px-8 py-4 transition-colors font-medium opacity-0 animate-fadeInUp ml-[100px] group"
+  style={{
+    animationDelay: "2.3s",
+    animationFillMode: "forwards",
+  }}
+>
+  Get a Free Quote
+  <span
+    className="ml-2 inline-block transform transition-transform duration-300 group-hover:translate-x-1"
+  >
+    →
+  </span>
+</a>
+
               </div>
             </div>
           </div>

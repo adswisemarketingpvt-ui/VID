@@ -48,13 +48,20 @@ const Testimonials = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Our Expert Designers</h2>
             </div>
       <div className="container mx-auto px-4">
-        <div
-          className="bg-cover bg-center py-20 px-8 rounded-lg relative"
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-          }}
-        >
+        <div className="relative bg-cover bg-center py-20 px-8  overflow-hidden">
+  {/* Background Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+  >
+    <source src="https://vishwaswamiinteriors.com/bg-v.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+
           <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
           <div className="relative z-10">
             <div className="flex justify-end">
